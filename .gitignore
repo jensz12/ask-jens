@@ -1,0 +1,7 @@
+### php ###
+.user.ini
+php.ini
+
+### Composer ###
+composer.phar
+/vendor/

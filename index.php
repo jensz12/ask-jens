@@ -16,7 +16,7 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {
 		$service = $router->service();
-		$service->title = '404 - Siden blev ikke fundet';
+		$service->title = '404 - Page not found';
 		$service->render('views/404.php');
 	}
 });

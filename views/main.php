@@ -4,14 +4,14 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Ask Jens</title>
+<title><?php echo $this->title; ?></title>
 <link rel="icon" href="data/img/askjensfav.png">
 <meta name="description" content="Ask Jens">
 <meta name="theme-color" content="#F81472">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jensz12">
 <meta name="twitter:creator" content="@jensz12">
-<meta name="twitter:title" content="Ask Jens">
+<meta name="twitter:title" content="<?php echo $this->title; ?>">
 <meta name="twitter:description" content="Ask Jens">
 <meta name="twitter:image:src" content="/data/img/askjens.jpg">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
