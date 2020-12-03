@@ -22,7 +22,7 @@ $klein->respond('GET', '/dbtest', function($request, $response, $service) {
   if ($mysqli->connect_errno)
     die('DB Connection failed, try again later');
 
-  $sql = 'SELECT * FROM articles ORDER BY date ASC';
+  $sql = 'SELECT * FROM articles ORDER BY name ASC';
   $result = $mysqli->query($sql);
  
   $articles = []; 
