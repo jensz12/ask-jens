@@ -19,7 +19,7 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 
 $klein->respond('GET', '/dbtest', function($request, $response, $service) {
 	$service->title = 'DB Test';
-	$service->articles = DB::query('SELECT * FROM articles ORDER BY name ASC');
+	$service->articles = DB::query('SELECT * FROM articles ORDER BY date ASC');
 	$service->render('views/dbtest.php');
 });
 
