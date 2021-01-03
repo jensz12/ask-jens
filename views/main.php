@@ -23,6 +23,7 @@
 body {
  background-color: #C0C0C0;
 	font-family: 'Press Start 2P', cursive;
+	font-size: 2em;
 	padding-top: 35px;
 }
 .form-control {

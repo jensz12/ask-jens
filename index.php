@@ -14,13 +14,8 @@ $klein->respond(function($request, $response, $service) {
 
 $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->title = 'Ask Jens';
-	$service->render('views/front.php');
-});
-
-$klein->respond('GET', '/dbtest', function($request, $response, $service) {
-	$service->title = 'DB Test';
 	$service->articles = DB::query('SELECT * FROM articles ORDER BY date ASC');
-	$service->render('views/dbtest.php');
+	$service->render('views/front.php');
 });
 
 $klein->onHttpError(function ($code, $router) {
