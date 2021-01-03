@@ -1,6 +1,10 @@
 <?php
-
 require 'vendor/autoload.php';
+
+DB::$user = 'themidnight_aj';
+DB::$password = ')@o1[Lvab%.7';
+DB::$dbName = 'themidnight_aj';
+DB::$encoding = 'utf8';
 
 $klein = new \Klein\Klein();
 
@@ -13,23 +17,9 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
-
 $klein->respond('GET', '/dbtest', function($request, $response, $service) {
-
-  $mysqli = new mysqli('localhost' , 'themidnight_aj' , ')@o1[Lvab%.7' , 'themidnight_aj');
-  $mysqli->set_charset('utf8');
-
-  if ($mysqli->connect_errno)
-    die('DB Connection failed, try again later');
-
-  $sql = 'SELECT * FROM articles ORDER BY name ASC';
-  $result = $mysqli->query($sql);
- 
-  $articles = []; 
-
-
-  $service->title = 'DB Test';
-  $service->articles = $articles; 
+	$service->title = 'DB Test';
+	$service->articles = DB::query('SELECT * FROM articles ORDER BY name ASC');
 	$service->render('views/dbtest.php');
 });
 

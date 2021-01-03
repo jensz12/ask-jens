@@ -1,5 +1,6 @@
 {
-    "require": {
-        "klein/klein": "^2.1"
-    }
+	"require": {
+		"klein/klein": "^2.1.2",
+		"sergeytsalkov/meekrodb": "^2.3.1"
+	}
 }
