@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/1dedeee01c.js" crossorigin="anonymous"></script>
+<link rel="manifest" href="/manifest.json">
 <script>
 if ('serviceWorker' in navigator) {
 	window.addEventListener('load', function() {

@@ -1,0 +1,20 @@
+{
+	"name": "Ask Jens - The Midnight Wiki",
+	"short_name": "Ask Jens",
+	"start_url": "https://askjens.themidnight.wiki",
+	"display": "standalone",
+	"theme_color": "#F81472",
+	"background_color": "#00151b",
+	"icons": [
+		{
+			"src": "/data/img/192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/data/img/1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png"
+		}
+	]
+}
