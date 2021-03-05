@@ -18,6 +18,12 @@ $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->render('views/front.php');
 });
 
+$klein->respond('GET', '/interview', function($request, $response, $service) {
+	$service->title = 'Ask Jens';
+	$service->articles = DB::query('SELECT * FROM interviews');
+	$service->render('views/interview.php');
+});
+
 $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {
 		$service = $router->service();
