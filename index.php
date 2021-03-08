@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+require 'inc/functions.php';
 
 DB::$user = 'themidnight_aj';
 DB::$password = ')@o1[Lvab%.7';
@@ -14,15 +15,19 @@ $klein->respond(function($request, $response, $service) {
 
 $klein->respond('GET', '/', function($request, $response, $service) {
 	$service->title = 'Ask Jens';
-	$service->articles = DB::query('SELECT * FROM articles ORDER BY date ASC');
+	$service->articles = DB::query('SELECT * FROM articles ORDER BY date DESC');
 	$service->render('views/front.php');
 });
 
-$klein->respond('GET', '/interview', function($request, $response, $service) {
-	$service->title = 'Ask Jens';
-	$service->articles = DB::query('SELECT * FROM interviews');
-	$service->render('views/interview.php');
-});
+foreach (DB::query('SELECT * FROM articles WHERE URL IS NULL OR URL = ""') as $article) {
+	$klein->respond('GET', '/'.slugify($article['headline']), function($request, $response, $service) {
+		global $article;
+
+		$service->title = $article['headline'];
+		$service->article = $article;
+		$service->render('views/article.php');
+	});
+}
 
 $klein->onHttpError(function ($code, $router) {
 	if ($code == 404) {

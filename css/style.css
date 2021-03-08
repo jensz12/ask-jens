@@ -1,0 +1,45 @@
+<style>
+body {
+	background-color: #C0C0C0;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.jumbotron {
+	margin-top: 35px;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.fa-heart {
+	color: #A81010;
+}
+
+.form-control {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.img {
+	margin-bottom: 100px;
+}
+
+.list-group {
+	margin-bottom: 100px;
+}
+
+h1 {
+	color: #F81472;
+	text-transform: uppercase;
+}
+h5 {
+	color: #F81472;
+	text-transform: uppercase;
+}
+
+h1.page-header {
+	margin-top: 1rem;
+}
+</style>
