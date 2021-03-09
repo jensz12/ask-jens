@@ -1,8 +1,10 @@
-<style>
 body {
 	background-color: #C0C0C0;
 	padding-top: 35px;
 	padding-bottom: 35px;
+}
+b, strong {
+    color: #F81472;
 }
 
 .jumbotron {
@@ -42,4 +44,3 @@ h5 {
 h1.page-header {
 	margin-top: 1rem;
 }
-</style>

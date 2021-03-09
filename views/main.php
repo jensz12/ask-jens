@@ -14,7 +14,7 @@
 	<meta name="twitter:site" content="@jensz12">
 	<meta name="twitter:creator" content="@jensz12">
 	<meta name="twitter:title" content="<?php echo $this->title; ?>">
-	<meta name="twitter:description" content="Ask Jens">
+	<meta name="twitter:description" content="<?php echo $this->desc; ?>">
 	<meta name="twitter:image:src" content="/data/img/askjens.jpg">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">	<link rel="image_src" href="/data/img/askjens.jpg">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +32,9 @@
 
 
 	<script id="CookieDeclaration" src="https://consent.cookiebot.com/0e71c815-765d-48da-9a57-f1b2f0230a8a/cd.js" type="text/javascript" async></script>
-	<?php include 'css/style.css'; ?>
+	<style>
+	<?php require 'css/style.css'; ?>
+	</style>
 </head>
 
 <body>
