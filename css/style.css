@@ -44,3 +44,25 @@ h5 {
 h1.page-header {
 	margin-top: 1rem;
 }
+
+.scroller {
+	overflow-y: scroll;
+	scrollbar-color: #F81472 #F81472;
+  }
+
+::-webkit-scrollbar-track
+{
+	border: 1px solid #F81472;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #F81472;
+}
