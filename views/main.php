@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0e71c815-765d-48da-9a57-f1b2f0230a8a" data-blockingmode="auto" type="text/javascript"></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,13 +28,10 @@
 		gtag('config', 'G-ZWFSHLP6SQ');
 	</script>
 
-
-	<script id="CookieDeclaration" src="https://consent.cookiebot.com/0e71c815-765d-48da-9a57-f1b2f0230a8a/cd.js" type="text/javascript" async></script>
 	<style>
 	<?php require 'css/style.css'; ?>
 	</style>
 </head>
-
 <body>
 	<div class="container">
 		<div class="row">
@@ -44,7 +39,7 @@
 				<?php $this->yieldView(); ?>
 				<div class="card">
 					<div class="card-body">
-						<p class="card-text">&copy; <?php echo date("Y"); ?> <a href="https://themidnight.wiki">The Midnight Wiki</a>.<small class="roboto"> Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">Copenhagen</a</a></small></p>
+						<p class="card-text">&copy; <?php echo date("Y"); ?> <a href="https://themidnight.wiki">The Midnight Wiki</a>.<small class="roboto"> Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">Copenhagen</a></small></p>
 					</div>
 				</div>
 			</div>
@@ -53,5 +48,4 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
-
 </html>
