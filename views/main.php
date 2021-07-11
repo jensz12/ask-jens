@@ -39,7 +39,7 @@
 				<?php $this->yieldView(); ?>
 				<div class="card">
 					<div class="card-body">
-						<p class="card-text">&copy; <?php echo date("Y"); ?> <a href="https://themidnight.wiki">The Midnight Wiki</a>.<small class="roboto"> Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">Copenhagen</a></small></p>
+						<p class="card-text">&copy; <?php echo date("Y"); ?> <a href="https://themidnight.wiki">The Midnight Wiki</a>. <a href="https://themidnight.wiki/policy/cookies">Cookie policy</a>. <a href="https://themidnight.wiki/policy/privacy">Privacy policy</a>. <small class="roboto"> Made with <i class="fal fa-heart"></i> in <a href="https://jensz12.com">Aalborg</a> & <a href="https://spirit55555.dk">Copenhagen.</a></small></p>
 					</div>
 				</div>
 			</div>
