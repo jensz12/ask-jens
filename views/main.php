@@ -19,14 +19,21 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
 	<script src="https://kit.fontawesome.com/5de3f22030.js" crossorigin="anonymous"></script>
 	<link rel="manifest" href="/manifest.json">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZWFSHLP6SQ"></script>
-	<script>
-			window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-ZWFSHLP6SQ');
-	</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://matomo.jensz12.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
 
 	<style>
 	<?php require 'css/style.css'; ?>
