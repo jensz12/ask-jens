@@ -7,7 +7,7 @@ b, strong {
     color: #F81472;
 }
 
-.jumbotron {
+.card {
 	margin-top: 35px;
 }
 
@@ -44,7 +44,7 @@ h5 {
 h1.page-header {
 	margin-top: 1rem;
 }
-
+//*Scrollbar for chrome*//
 ::-webkit-scrollbar-track
 {
 	border: 1px solid #F81472;
