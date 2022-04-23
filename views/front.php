@@ -1,7 +1,7 @@
 <div class="text-center">
 	<img src="/data/img/askjens.png" class="img-fluid center-block" alt="Ask Jens" width="400px">
 </div>
-<input class="form-control" type="text" placeholder="The Midnight interviews" readonly>
+<input class="form-control" type="text" placeholder="The Midnight articles and interviews" readonly>
 	<div class="list-group">
 		<?php foreach ($this->articles as $article): ?>
 			<?php

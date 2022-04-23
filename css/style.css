@@ -1,8 +1,39 @@
+@font-face {
+	font-family: OpticianSans;
+	src: url(https://static.midnight.wiki/fonts/Optiker-K.woff2);
+  }
+
 body {
-	background-color: #C0C0C0;
+	background-color: #00151b;
+	background-image: radial-gradient(#00203c, black 100%);
+	font-size: 16px;
+	line-height: 20px;
+	color: #D3D3D3 !important;
+	margin-top: 70px;
 	padding-top: 35px;
 	padding-bottom: 35px;
 }
+
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: repeating-linear-gradient(0deg, rgba(0, 128, 255, 0), rgba(0, 128, 255, 0.1) 4px, rgba(0, 128, 255, 0.1) 4px, rgba(0, 128, 255, 0) 7px);
+	pointer-events: none;
+}
+
+input {
+	font-family: 'Press Start 2P', cursive;
+}
+
+p {
+	color: black;
+}
+
 b, strong {
     color: #F81472;
 }
@@ -32,19 +63,20 @@ b, strong {
 	margin-bottom: 100px;
 }
 
-h1 {
+h1,h5 {
 	color: #F81472;
 	text-transform: uppercase;
+	font-family: OpticianSans;
 }
-h5 {
+
+strong {
 	color: #F81472;
-	text-transform: uppercase;
+	font-family: OpticianSans;
 }
 
 h1.page-header {
 	margin-top: 1rem;
 }
-//*Scrollbar for chrome*//
 ::-webkit-scrollbar-track
 {
 	border: 1px solid #F81472;
