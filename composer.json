@@ -1,6 +1,13 @@
 {
+		"repositories": [
+			{
+				"type": "github",
+				"no-api": true,
+				"url": "https://github.com/Spirit55555/klein.php"
+			}
+		],
 	"require": {
-		"klein/klein": "^2.1.2",
+		"klein/klein": "dev-master",
 		"sergeytsalkov/meekrodb": "^2.3.1",
 		"erusev/parsedown": "^1.7"
 	}
